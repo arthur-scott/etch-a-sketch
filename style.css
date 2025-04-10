@@ -1,18 +1,47 @@
+
+.container-of-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    height: 100vh;
+}
+
 .container {
     display: flex;
-    flex-wrap: wrap;
+    box-sizing: border-box;
+    flex-wrap: nowrap;
     margin: 0;
+    min-width: 600px;
+    min-height: 600px;
     padding: 0;
 }
 
-.square {
+#regenerate {
     display: flex;
-    width: 60px;
-    height: 60px;
-    outline: solid green;
+    justify-content: center;
+    padding: 10px;
+    font-weight: bold;
 }
 
 .column {
     display: flex;
     flex-direction: column;
+    flex: 1;
+}
+.square {
+    display: flex;
+    outline: solid green;
+    flex: 1;
+    aspect-ratio: 1 / 1; /* Make each square actually square  NICE!!!*/
+}
+
+.square:hover {
+    background-color: black;
+}
+
+.square:not(:hover) {
+    background-color: white;
+    transition-duration: 5000ms;
 }
