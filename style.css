@@ -1,0 +1,14 @@
+.container {
+  display: flex;
+  flex-wrap: wrap;
+  margin: 0;
+  padding: 0;
+  outline: solid black;
+}
+
+.square {
+  display: flex;
+  width: 40px;
+  height: 40px;
+  outline: solid green;
+}
